@@ -1,4 +1,7 @@
 {
+  "manifest_version": 2,
+ "display": "fullscreen",
+ "start_url": "/tech3/?fullscreen=true",
  "name": "비전공 개발자",
  "theme_color": "#000000",
  "background_color": "#ffffff",
@@ -18,7 +21,5 @@
    "sizes": "180x180",
    "type": "image/png"
   },  
-  "start_url": "/?standalone=true",
-  "display": "standalone"
  ]
 }
