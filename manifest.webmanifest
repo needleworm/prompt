@@ -1,6 +1,5 @@
 {
  "name": "비전공 개발자",
- "display": "fullscreen",
  "theme_color": "#000000",
  "background_color": "#ffffff",
  "icons": [
@@ -19,6 +18,7 @@
    "sizes": "180x180",
    "type": "image/png"
   },  
-  "start_url": "/",
+  "start_url": "/?standalone=true",
+  "display": "standalone"
  ]
 }
