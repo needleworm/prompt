@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prompt Engineering</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="프롬프트 엔지니어링 도서 홈페이지">
+    <link rel="canonical" href="http://localhost:4000/prompt/">
+
+    <!-- Event snippet for Website traffic conversion page -->
+    <script>
+      gtag('event', 'conversion', {'send_to': 'AW-869459612/_ieBCLym-_QBEJzNy54D'});
+    </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GP6DD3D3FC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GP6DD3D3FC');
+</script>
+    
+     <!-- 미리보기 카드 -->
+
+    <!-- 일반 -->
+    <meta property="og:type" content="article">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="프롬프트 엔지니어링">
+    <meta property="og:description" content="프롬프트 엔지니어링 도서 홈페이지">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/dataset/img/header-bg.png" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/prompt/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/prompt/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/prompt/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/prompt/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/prompt/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/prompt/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/prompt/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/prompt/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/prompt/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/prompt/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/prompt/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/prompt/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/prompt/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/prompt/manifest.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/prompt/img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-starturl" content="https://needleworm.github.io/prompt">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Prompt Engineering">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="Prompt Engineering" />
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/prompt/style.css">
+
+    <!-- Custom Fonts -->
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+    <body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="https://cdn.jsdelivr.net/gh/needleworm/prompt/img/logo.png" alt="" class="logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#book">책</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#part1">온라인 강의</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#part2">이론적 배경</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#part3">태스크 프롬프트</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#part4">교육학적 기법</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#part5">프롬프트 해킹</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">문의</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#otherBooks">작가의 책들</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" style="height:55vw; min-height:500px;">
+            
+        </div>
+    </header>
+<!--
+        
+          
+        
+          
+        
+          
+        
+          
+        
+ -->
+
+
+    <!-- markets -->
+<section  id="book" class="bg-light-gray">
+    <div class="container" style="text-align:center;">
+      <h3>
+        책소개
+      </h3>
+        <div class="team-member">
+            <img src="https://cdn.jsdelivr.net/gh/needleworm/prompt/img/mainCover.jpg" class="img-responsive bookcover" alt="">
+            <h5>프롬프트 엔지니어링</h5>
+            <h6>생성형 인공지능을 제대로 활용하는 방법</h6>
+            <ul class="list-inline ">
+                <li>
+                    <a href="https://search.shopping.naver.com/book/catalog/42879138623" target="_blank" rel="noreferrer">
+                        <img src="img/stores/naver.png" class="bookstore"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K872935139" target="_blank" rel="noreferrer">
+                        <img src="img/stores/aladdin.png" class="bookstore"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.yes24.com/Product/Goods/122661870" target="_blank" rel="noreferrer">
+                        <img src="img/stores/yes24.png" class="bookstore"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://product.kyobobook.co.kr/detail/S000209512470" target="_blank" rel="noreferrer">
+                        <img src="img/stores/kyobo.png" class="bookstore"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- markets -->
+<section  id="part1" >
+    <div class="container" style="text-align:center;">
+
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 0</div><br/>
+        <div class="chapterSubtitle">데이터셋 사용 안내</div>
+        <p class="chapters">
+          <strong>Section 1</strong> 이 책을 활용하는 방법<br/>
+          <strong>Section 2</strong> 데이터셋의 사용과 저작권법<br/>
+        </p>
+      </div>
+      <br/><br/><hr/><br/>
+
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 1</div><br/>
+        <div class="chapterSubtitle">데이터 포털 (Data Portal)</div>
+        <p class="chapters">
+          <strong>001</strong> 텐서플로 데이터셋 <a href="https://www.tensorflow.org/datasets/catalog/overview" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i><br/></a>
+          <strong>002</strong> AI Hub <a href="https://aihub.or.kr" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i><br/></a>
+          <strong>003</strong> 공공데이터포털 <a href="https://www.data.go.kr" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i><br/></a>
+          <strong>004</strong> 야후(Yahoo!) 데이터셋 <a href="https://webscope.sandbox.yahoo.com/#datasets" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i><br/></a>
+        </p>
+      </div>
+        
+    </div>
+  </section>
+
+    <!-- markets -->
+<section  id="part2"  class="bg-light-gray">
+    <div class="container" style="text-align:center;">
+      <p>
+        <div class="chapterSubtitle">데이터 백업 스토리지 접근 안내</div><br/>
+        책에 기재된 데이터의 원본 출처를 통하여 데이터를 다운로드해주시기 바라며,<br/>
+        데이터셋의 공식 홈페이지에 문제가 생겨 데이터셋에 접근이 곤란한 경우<br/>백업 스토리지를 활용해주시기 바랍니다.<br/>
+        <br/>이 책을 구매하신 분께서만 데이터 백업 스토리지에 접근하실 수 있습니다. 
+        <br/>이에 동의하시는 독자분께서만 아래 버튼을 클릭하여 백업 스토리지 접근 권한을 신청해 주시기 바랍니다.
+        <br/><br/><a href="https://docs.google.com/forms/d/e/1FAIpQLSdzesV-KZXVBa2_pdCp6-BvvwTsmyU3kocl7B7AmaZt6mA0nA/viewform?usp=sf_link">
+          <button class="btn btn-xl" target="_blank">스토리지 접근권한 신청</button>
+        </a>
+      </p>
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 2</div>
+        <div class="chapterSubtitle">이미지 분류 (Image Classification)</div>
+        <p class="chapters">
+          <strong>005</strong> FGVC - 항공기 사진
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1BOti9nLRTHXVS-C5l-FZ8Z8lgIBOszLy?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>006</strong> MNIST - 숫자 손 글씨
+            <a href="http://yann.lecun.com/exdb/mnist/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1EA2f4843bT2tT5UjqAIwEiaJysz1OONf?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>007</strong> Fashion MNIST - 패션의류<a href="https://github.com/zalandoresearch/fashion-mnist" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1E89dVUU3gvPetL5CGXa68FgY4GOoNJHb?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>008</strong> Omniglot - 알파벳 손 글씨
+            <a href="https://github.com/brendenlake/omniglot/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1E5muonBcmU5djkfP2eZxQnT8PMaosQxu?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>009</strong> Quick, Draw! - 손그림
+            <a href="https://github.com/googlecreativelab/quickdraw-dataset" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1DxjN53pWYkIYBLPi6V-jZXhIPFw-lNXL?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>010</strong> CIFAR-10 - 실물 오브젝트
+            <a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1DuWo2-Yyd-jfY5M0bYUawUjRLLPcfmvi?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>011</strong> CIFAR-100 - 실물 오브젝트
+            <a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1Dtwlfvpdt9Bq85GrWA5dIU2bhbUBCf4g?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>012</strong> CUB-200 - 조류 사진
+            <a href="http://www.vision.caltech.edu/visipedia/CUB-200-2011.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1DlzLvd4WK03AvIWUuhJA1SC-W4PJfwt3?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>013</strong> SVHN - 현실 숫자
+            <a href="http://ufldl.stanford.edu/housenumbers/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1DkTvBc2RcZmwTEa78O-5VX-4DjSYK-Ty?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>014</strong> Conflict Stimuli - CNN 일반화
+            <a href="https://github.com/rgeirhos/texture-vs-shape" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1DiPNs5kmZ4GV3y02xb9X7N038TyTW_3J?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>015</strong> iNaturalist - 자연 사진
+            <a href="https://github.com/visipedia/inat_comp" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1ELq7n_WM2GPP2aZylix2OHjgKss1JLVX?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>016</strong> So2Sat - 인공위성 사진
+            <a href="https://mediatum.ub.tum.de/1454690" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1GYjQZDgvQzUIGInPQV94Ml22TbY09zpO?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>017</strong> SI-SCORE - CNN 일반화
+            <a href="https://github.com/google-research/si-score" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1GW_wgrGNbxYL6oAjOdGZJIA15fBtRX_2?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+            
+          <strong>018</strong> CO3D - 객체 다각도 촬영
+            <a href="https://github.com/facebookresearch/co3d" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1HGD2cfj29G3g45gOjx7DPL3Tmt91Ay1_?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+
+      
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 3</div>
+        <div class="chapterSubtitle">탐지 및 표지 (Detection and Segmentation)</div>
+        <p class="chapters">
+          <strong>019</strong> COCO - 대규모 종합 영상 데이터
+            <a href="https://cocodataset.org/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <br/>
+          <strong>020</strong> Open Image V6 - 대규모 종합 영상 데이터
+            <a href="https://storage.googleapis.com/openimages/web/factsfigures.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <br/>
+          <strong>021</strong> Scluptures 6K - 조각상 찾기
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/sculptures6k/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1IBvNvlO5xhCoB8jFmm3GpzErgLrP5E83?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>022</strong> Oxford-IIIT PET - 동물 사진
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/pets/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1lhnRzotnDxA7-oQjAlJwyEwFCRhmZjpl?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>023</strong> Penguin - 펭귄 찾기
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/penguins" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1lT1ypD_7cz_TJwAIPHuvjb53pTZCrKnw?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>024</strong> DAVIS - 비디오 세그멘테이션
+            <a href="https://davischallenge.org/index.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1lS8waHxTYBiw0bG6Xp5jbGE1hMKUO2Q3?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+      
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 4</div>
+        <div class="chapterSubtitle">의미론적 연관성 (Semantic Correspondence)</div>
+        <p class="chapters">
+          <strong>025</strong> Animal Parts - 동물 신체부위
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/animal_parts/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1lKw8JDq-A_2CtTOvp33fY3xR3DCKOlzV?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>026</strong> PF-PASCAL - Semantic Flow
+            <a href="https://www.di.ens.fr/willow/research/proposalflow/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1lJsghoPRboAOjCFGqM1g-UNk9kP2oxDs?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>027</strong> SPair-71k - Semantic Correspondence
+            <a href="http://cvlab.postech.ac.kr/research/SPair-71k/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1wtVKRQgMAvcDWhc5dHomjAlLVc3N1v54?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>028</strong> TTS - Semantic Correspondence
+            <a href="https://taniai.space/projects/cvpr16_dccs028" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1jJOah4S6WwMI-rXwVjlLxHsPmQdqhwke?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+      
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 5</div>
+        <div class="chapterSubtitle">안면인식 (Human Face Recognition)</div>
+        <p class="chapters">
+          <strong>029</strong> FairFace - 다인종 얼굴
+            <a href="https://github.com/joojs/fairface" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1LWuwMu3zE8inC2hlCBKHAz-oIL-n_jtL?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>030</strong> CelebA - 유명인 얼굴
+            <a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1TEok043oORxujNkuwEbr67YFzc6zL-jf?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>031</strong> CelebA Mask-HQ - 얼굴 조작
+            <a href="https://github.com/switchablenorms/CelebAMask-HQ" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1a1zbX81SBXJ9vIhKeADEzOOX7O3G0I3h?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>032</strong> AFLW - 얼굴 3차원 정보
+            <a href="http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/3DDFA/main.htm" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1_gS8YpqwsMRNxiZoz0DvfqmfH7hqMcbt?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>033</strong> LS3D-W - 얼굴 3차원 정보
+            <a href="https://www.adrianbulat.com/face-alignment" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1wr4fPtmNz_xjpCIA4XBSDg38FQ2LpRIq?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>034</strong> VGG-Face2 - 얼굴 인식
+            <a href="https://github.com/ox-vgg/vgg_face2" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1_fx_-8gO91OrAXoOqQmegrMX6FQbKdYx?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>035</strong> Celebrity Together - 얼굴 인식
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/celebrity_together/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>036</strong> Celebrity in Place - 인물과 장소 동시 인식
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/celebrity_in_places/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+      
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 6</div>
+        <div class="chapterSubtitle">자세 인식 (Human Pose Estimation)</div>
+        <p class="chapters">
+          <strong>037</strong> Hand Dataset - 사람 손
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/hands/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1_rGPrKBZfgBpNjPGRtpwHQF5SrZLk1Qx?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>038</strong> Buffy Pose - 특정 포즈 인식
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/buffy_pose_classes/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1R2qcecJvMgyYT2WHn5iDENNXJxuydGiE?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>039</strong> Buffy Stickman - 자세 인식
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/stickmen/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1a2FbDhWY0TAIZ9_CaeusfMTxEZRcBcp5?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>040</strong> VGG HPE - 자세 인식
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/pose/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/18apakuiL4at6HZXVa5BI3fbCXCLW3tbE?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>041</strong> Sign Language Pose - 수화 인식
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/sign_language/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1aXwu1q8AzhHxG1RLxLP0gyh9J68Y20uQ?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>042</strong> LSP - 스포츠 포즈
+            <a href="http://sam.johnson.io/research/lsp.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1_pQOeva31mEBVE3cdKiz3AMo5qPTuTY3?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>043</strong> MPI-INF-3DHP - 자세 추론
+            <a href="https://vcai.mpi-inf.mpg.de/3dhp-dataset/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1_hui2D_jqhq-mIDYn4bbOGtUefg_FKHG?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>044</strong> Human 3.6M - 대규모 인체 데이터
+            <a href="http://vision.imar.ro/human3.6m/description.php" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1_iWL4nuTlhb1TWadMuzbLECqrjmyR8hX?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>045</strong> 3DPW - 3D 자세 추론
+            <a href="https://virtualhumans.mpi-inf.mpg.de/3DPW/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1aRWSjRmVLPFie-lN61ETSMMMmfvfBFLq?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+      
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 7</div>
+        <div class="chapterSubtitle">자율주행 (Automonous Driving)</div>
+        <p class="chapters">
+          <strong>046</strong> BDD100K - 대규모 자율주행 데이터
+            <a href="https://www.bdd100k.com" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <br/>
+          <strong>047</strong> KITTI - 대규모 자율주행 데이터
+            <a href="http://www.cvlibs.net/datasets/kitti/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <br/>
+          <strong>048</strong> Cityscape - 길거리 세그멘테이션
+            <a href="https://www.cityscapes-dataset.com" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <br/>
+          <strong>049</strong> Cityscape 3D - 탈것 인식
+            <a href="https://github.com/mcordts/cityscapesScripts" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1_ml8Fu7PHVGvgH287qkyJcZir98no5e-?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>050</strong> CULane - 도로만 인식
+            <a href="https://xingangpan.github.io/projects/CULane.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1Piy1NojXH96r86p_Td_5zBP_M2VGNF_j?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+      
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 8</div>
+        <div class="chapterSubtitle">비디오 (Video)</div>
+        <p class="chapters">
+          <strong>051</strong> Vox Converse - 발화자 찾기
+            <a href="https://www.robots.ox.ac.uk/%7Evgg/data/voxconverse/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1aNxSW95-jAEzV3N9YL8wjuBXUnGHSRKM?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>052</strong> VGG-Sound - Audio-Visual
+            <a href="https://www.robots.ox.ac.uk/%7Evgg/data/vggsound/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1-s3_ksGYmjba3-bfZINCBp13NRcsWoxr?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>053</strong> MoCA - 은신 중인 동물 찾기
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/MoCA/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/CookingDataset" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>054</strong> Condensed Movie - 영화 클립
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/condensed-movies/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1PTl8jzrSSQbIaMBIKmyNKd8hqGi8UMjU?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>055</strong> Sherlock TV Series - 안면 인식
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/Sherlock/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1YWsP8imTEt7Tf-QZ2_I_430g5lysg2LE?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>056</strong> LAEO - Human Interaction
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/laeo/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1gk-WjpEGUqzYLN2SrpSSw2PXGXaVARK5?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>057</strong> TV Human Interaction - Human Interaction
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/tv_human_interactions/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1gRXK4sfn7kaWm4jGnkFKDmMIBKJ6mv1A?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>058</strong> SCV - 스타크래프트 2 플레이 영상
+            <a href="https://storage.googleapis.com/scv_dataset/README.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1MNt4zc6StkCVOu5RyV3ttPqv7EGSPguf?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>059</strong> Fake AVCeleb - 딥페이크 감지
+            <a href="https://sites.google.com/view/fakeavcelebdash-lab/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1MUWddAQ0RVD-gAKU5OpJf8psg5pdJzaO?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 9</div>
+        <div class="chapterSubtitle">농업 영상 (Agricultural Images)</div>
+        <p class="chapters">
+          <strong>060</strong> Citrus - 시트러스
+            <a href="https://data.mendeley.com/datasets/3f83gxmv57/2" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1MSaqaeHLytnPSehs2d4xlI56MUzjTfFM?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>061</strong> Deep Weeds - 잡초
+            <a href="https://github.com/AlexOlsen/DeepWeeds" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1NS16Dh1Fvp-J8H2S4sNEWc-M6Gf-K0_r?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>062</strong> Plant Leaves - 잎사귀
+            <a href="https://data.mendeley.com/datasets/hb74ynkjcn/1" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1ReEO4DROnoOQlzbsK-jgvQ1lzHnBVekc?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>063</strong> Plant Village - 잎사귀
+            <a href="https://data.mendeley.com/datasets/tywbtsjrjv/1" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1MWVwRCXsy-V2HkTSaXEnL2217ueRxMUD?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>064</strong> PlanteK - 잎사귀
+            <a href="https://data.mendeley.com/datasets/t6j2h22jpx/1" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/16Xodju1ddK4mAfOps2jpO0n2RRdJgmnl?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>065</strong> iBean - 콩잎
+            <a href="https://github.com/AI-Lab-Makerere/ibean/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/16GNh9wLomNErCwhdFyQvvoA13e501tOR?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 10</div>
+        <div class="chapterSubtitle">의료 영상 (Medical Images)</div>
+        <p class="chapters">
+          <strong>066</strong> MimickNet - 영상 재건
+            <a href="https://github.com/ouwen/mimicknet" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/16F7hUus2-KH-AUrOla2rIyPS2vnLKBbY?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>067</strong> CBIS-DDSM - 유방암 조영
+            <a href="https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/16BXAHhQmocwwsQKXCGzz2b5T0VEhzJJe?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>068</strong> CCH - 현미경 사진
+            <a href="https://zenodo.org/record/53169#.YV6LhS_kGCj" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/169yfqZpRJPq6fGxGbCX57VT_ICS3Mrqz?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>069</strong> BCCD - 혈구
+            <a href="https://github.com/Shenggan/BCCD_Dataset" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/146SjIVteAlaUYGBfpWKQjzde3Ng1Rg6k?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>070</strong> Malaria - 말라리아 감염 혈액
+            <a href="https://lhncbc.nlm.nih.gov/LHC-publications/pubs/MalariaDatasets.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1DDYbnUu-XX4MpunJ_KCT0nswkttnEnY2?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>071</strong> MSD - Segmentation
+            <a href="http://medicaldecathlon.com/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1ZgVOG2annbfen3FKI7-Yq5dtwGYBeqfk?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>072</strong> VFP290K - 실신 환자 찾기
+            <a href="https://sites.google.com/view/dash-vfp300k/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1BqAsF8Zh5pVa3sfJSk4vuNr1aMF68Tuo?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 11</div>
+        <div class="chapterSubtitle">그 외 영상 데이터 (Other Visual Data)</div>
+        <p class="chapters">
+          <strong>073</strong> SyntText - OCR
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/scenetext/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1Bgpm7lM4W8W7eeF0SwAI2CB_XY037EVe?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>074</strong> MJSynth - OCR
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/text/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1COSgNCWXfikCZkxyjBnGykGQ5It8IJs5?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>075</strong> Oxford Buildings - 객체 인식
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/oxbuildings/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1CHqoqTYMKKHrBxraIbtSxLfWlKwUOhhN?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>076</strong> S3O4D - 다각도 랜더링
+            <a href="https://github.com/deepmind/deepmind-research/tree/master/geomancer#stanford-3d-objects-fordisentangling-%20s3o4d" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/19iZB9EbpP4enKdgArdwoC8JkYTCpPh_7?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>077</strong> 3D Shapes - 다각도 렌더링
+            <a href="https://github.com/deepmind/3d-shapes" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1uVhJTJ501EeDY9Dmu0Zh4q02pc9SMHGE?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>078</strong> NYU Depth - 깊이 추론
+            <a href="https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1uYnRdj09BfEnHOyOlohZ4-S9HUJXbDs0?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          <strong>079</strong> DMLab - 깊이 추론
+            <a href="https://github.com/google-research/task_adaptation" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/19fUsK4W5qIVZWSxT0PI8H2dPesvTDVQH?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+
+  </section>
+
+    <!-- markets -->
+<section  id="part3" >
+    <div class="container" style="text-align:center;">
+
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 12</div>
+        <div class="chapterSubtitle">영어 자연어 처리 (English NLP)</div>
+        <p class="chapters">
+          <strong>080</strong> WikiBio - 위키피디아 문서
+            <a href="https://github.com/DavidGrangier/wikipedia-biography-dataset" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/wikipedia-biography-dataset" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+            
+          <strong>081</strong> GPT2 Output - 대규모 텍스트
+            <a href="https://github.com/openai/gpt-2-output-dataset" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/gpt-2-output-dataset" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>082</strong> Summ Screen - 대화 요약
+            <a href="https://github.com/mingdachen/SummScreen" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1x6fb8X-GH23KSW8skvLogBhyvJljBzR_?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>083</strong> Long Summarization - 논문 요약
+            <a href="https://github.com/armancohan/long-summarization" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1xsCkUKStEL4uQ5nCl4ldiXScj1wNGQst?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>084</strong> PubMed Crawl - 논문 정보 수집
+            <a href="https://github.com/needleworm/PubMed_Crawl_exe" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/needleworm/pubmed_crawler" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>085</strong> DART - 시멘틱 트리플렛
+            <a href="https://github.com/Yale-LILY/dart" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/dart" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>086</strong> Twitch Chat - 트위치 채팅
+            <a href="https://osf.io/39ev7/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/19QFVdiissk9xBNMKt6yMBco1edZxZkDt?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 13</div>
+        <div class="chapterSubtitle">한국어 자연어 처리 (Korean NLP)</div>
+        <div class="chapterSubtitle"><a href="https://arxiv.org/abs/2112.01624" target="_blank">한국어 자연어 데이터셋 논문 <u>link</u> <i class="fas fa-external-link-alt"></i><br/></a></div>
+        <p class="chapters">
+          <strong>087</strong> ParaKQC - 질문과 명령
+            <a href="https://github.com/warnikchow/paraKQC" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/paraKQC" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>088</strong> Chatbot_data - 챗봇
+            <a href="https://github.com/songys/Chatbot_data" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/Chatbot_data" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+          
+          <strong>089</strong> ClovaCall - 음성 대화
+            <a href="https://github.com/clovaai/ClovaCall" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5bm7FtWYeZf8C02mlyZCg32yMrA9_DgKU17oD0migPkEXog/viewform" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>090</strong> KorQuAD 2.0 - 질의응답
+            <a href="https://korquad.github.io" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/korquad.github.io" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>091</strong> Song-NER - 개체명 인식
+            <a href="https://github.com/songys/entity" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/entity" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>092</strong> KMOUNLP-NER - 개체명 인식
+            <a href="https://github.com/kmounlp/NER" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/NER" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>093</strong> Sci-News-Sum-Kr-50 -뉴스 요약
+            <a href="https://github.com/theeluwin/sci-news-sum-kr-50" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/sci-news-sum-kr-50" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>094</strong> Petitions - 청와대 국민청원
+            <a href="https://github.com/akngs/petitions" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/petitions" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>095</strong> KLUE - 한국어 이해
+            <a href="https://github.com/KLUE-benchmark/KLUE" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/KLUE" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>096</strong> KorNLU - 문장 분류 및 유사성
+            <a href="https://github.com/kakaobrain/KorNLUDatasets" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/KorNLUDatasets" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>097</strong> NSMC - 네이버 영화 리뷰
+            <a href="https://github.com/e9t/nsmc" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/nsmc" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>098</strong> Toxic Comment - NSMC 감정 상세화
+            <a href="https://github.com/songys/Toxic_comment_data" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/Toxic_comment_data" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>099</strong> 3i4K - 발화 의도 분석
+            <a href="https://github.com/warnikchow/3i4k" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/3i4k" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>100</strong> Korean Hate Speech - 혐오발언
+            <a href="https://github.com/kocohub/korean-hate-speech" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/korean-hate-speech" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>101</strong> KAIST Corpus - 코퍼스 데이터셋 모음
+            <a href="http://semanticweb.kaist.ac.kr/home/index.php/KAIST_Corpus" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <br/>
+        </p>
+      </div>
+
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 14</div>
+        <div class="chapterSubtitle">질의응답 (Question Answering)</div>
+        <p class="chapters">
+          <strong>102</strong> ARC - 지능검사 문제
+            <a href="https://github.com/fchollet/ARC/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/ARC" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>103</strong> ARM - 행렬추론
+            <a href="https://github.com/deepmind/abstract-reasoning-matrices" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/11fQTfuDK6B3P5GRy_ccAxGsmdgCaNhmP?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>104</strong> AI2 ARC - 과학 시험문제
+            <a href="https://allenai.org/data/arc" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1yhjDqBemJsFfmr-JatqrNGz32vM-KsSs?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>105</strong> NQ-Open - 영어 질의응답
+            <a href="https://github.com/google-research-datasets/natural-questions/tree/master/nq_open" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/natural-questions" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>106</strong> SQuAD - 독해 기반 질의응답
+            <a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1p5OqwAGYuQeCMx20qSIfQLOkP39DSkId?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>107</strong> CoQA - 대화 기반 질의응답
+            <a href="https://stanfordnlp.github.io/coqa/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1qZrLJj0GvphIO5K7tbrmmIs2Ck5JokZt?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 15</div>
+        <div class="chapterSubtitle">기계번역 (Machine Translation)</div>
+        <p class="chapters">
+          <strong>108</strong> XQuAD - 다국어 질의응답
+            <a href="https://github.com/deepmind/xquad" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/xquad" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+            
+          <strong>109</strong> MLQA - 다국어 질의응답
+            <a href="https://github.com/facebookresearch/MLQA" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1q-uMnUTkX5LLEswtF2UwyIJqzp0eczBu?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>110</strong> TyDi - 다국어 질의응답
+            <a href="https://github.com/google-research-datasets/tydiqa" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1yP1BvPrJVNk4hgjGRbYeS3w3kDEB9JG5?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>111</strong> FloRes-101 - 101가지 언어 번역
+            <a href="https://github.com/facebookresearch/flores/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/14T3HkXJ4eYQuKNoScGbvTGfI4FBojO5q?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>112</strong> Ted Talks - 테드 강연
+            <a href="https://github.com/neulab/word-embeddings-for-nmt" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/11oSaPFE0rzN9vDblfCU9TmMi3susYTwZ?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>113</strong> KPC - 한국어, 영어, 불어 매핑
+            <a href="https://github.com/jungyeul/korean-parallel-corpora" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/korean-parallel-corpora" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+    </div>
+  </section>
+
+    <!-- markets -->
+<section  id="part4"  class="bg-light-gray">
+    <div class="container" style="text-align:center;">
+
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 16</div>
+        <div class="chapterSubtitle">음성 발화 (Speech and Voices)</div>
+        <p class="chapters">
+          <strong>114</strong> Spoken Digit - 음성 MNIST
+            <a href="https://github.com/Jakobovski/free-spoken-digit-dataset" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/free-spoken-digit-dataset" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>115</strong> Libri Speech - 대규모 음성 코퍼스
+            <a href="https://www.openslr.org/12" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/11OHsnH6tsXdcyua3eP_qE7fsXosxykY0?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>116</strong> LibriTTS - 음성 코퍼스
+            <a href="http://www.openslr.org/60" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/11SUQ9_y_SyMkVslruk6pL-WyuFVFuRlI?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>117</strong> LJSpeech - 오디오북
+            <a href="https://keithito.com/LJ-Speech-Dataset/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1zhe4IQpUGTFEuDxpAgXwWP4AC-eZKS-L?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>118</strong> Common Voice Corpus - 대규모 음성 코퍼스
+            <a href="https://commonvoice.mozilla.org/en/datasets" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <br/>
+
+          <strong>119</strong> CREMA-D - 감정 인식
+            <a href="https://github.com/CheyneyComputerScience/CREMA-D" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/CREMA-D" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>120</strong> VoxCeleb2 - 대규모 발화 데이터
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1QIryXF9q1nEXkpPQK6j7_SAsbgJL14eY?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>121</strong> LRW - 입술 읽기 (단어)
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrw1.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://www.bbc.co.uk/rd/projects/lip-reading-datasets" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>122</strong> LRS3-TED - 입술 읽기(문장)
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs3.html" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1OYtJIZ8df_K0qzVLfYqimNmrnMv_OdRx?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+      
+      <br/><br/><hr/><br/>
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 17</div>
+        <div class="chapterSubtitle">음악 및 소리 (Music and Sound)</div>
+        <p class="chapters">
+          <strong>123</strong> FUSS - 소리 분해
+            <a href="https://github.com/google-research/sound-separation/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/sound-separation" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>124</strong> CMM - 클래식 음악
+            <a href="https://www.kaggle.com/soumikrakshit/classical-music-midi" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1nJIEVnYLZwBUhi_NdIIml73Zqt4Ipjpf?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>125</strong> GMD - 전자 드럼
+            <a href="https://magenta.tensorflow.org/datasets/groove" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/16lpAJAMWA0rPT0pfXSm4_wHubOqQZ_yj?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>126</strong> E-GMD -전자 드럼
+            <a href="https://magenta.tensorflow.org/datasets/e-gmd#download" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/16cIoW0-X06YRFaiiWBzNEiqBa0XwvHwx?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>127</strong> NSynth - 대규모 악보
+            <a href="https://magenta.tensorflow.org/datasets/nsynth#files" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1aaaK3-CBlIU4nhkXKjpY6gIpI8wtzGk8?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>128</strong> Bach-Doodle -화음
+            <a href="https://magenta.tensorflow.org/datasets/bach-doodle" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1I36_IJvRJagSnkmn2hY0XQMJBRUa52dM?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+            
+          <strong>129</strong> MAESTRO - 피아노 연주
+            <a href="https://magenta.tensorflow.org/datasets/maestro" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1_xCCwJKWLH7uagMVoWnosYm-l3sQ4x48?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
+    <!-- markets -->
+<section  id="part5" >
+    <div class="container" style="text-align:center;">
+      <div class="chapter">
+        <div class="chapterTitle">CHAPTER 18</div>
+        <div class="chapterSubtitle">강화학습 (Reinforcement Learning Environments)</div>
+        <p class="chapters">
+          <strong>130</strong> Green House - 온실 시뮬레이션
+            <a href="https://github.com/needleworm/greenhouse_ai" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://drive.google.com/drive/folders/1jG4wJIy5S4dpb2Cm8gQTL8rmtNYfkRbT?usp=sharing" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+
+          <strong>131</strong> OpenAI GYM - 대규모 강화학습 환경들
+            <a href="https://gym.openai.com/" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://pypi.org/search/?q=gym" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+            
+          <strong>132</strong> D4RL - 대규모 강화학습 환경들
+            <a href="https://sites.google.com/view/d4rl" target="_blank"><u>link</u> <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/bhban2/d4rl" target="_blank"> <u>backup</u> <i class="fas fa-save"></i></a><br/>
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
+    <!-- Other Books Section -->
+
+<div data-include-path="https://raw.githubusercontent.com/needleworm/needleworm.github.io/master/src/resource_forward/contact.html"></div>
+
+<script>
+
+    window.addEventListener('load', function() {
+        var allElements = document.getElementsByTagName('*');
+        Array.prototype.forEach.call(allElements, function(el) {
+            var includePath = el.dataset.includePath;
+            if (includePath) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        el.outerHTML = this.responseText;
+                    }
+                };
+                xhttp.open('GET', includePath, true);
+                xhttp.send();
+            }
+        });
+    });
+
+</script>
+
+    <!-- Other Books Section -->
+
+<div data-include-path="https://raw.githubusercontent.com/needleworm/needleworm.github.io/master/src/resource_forward/otherBooks.html"></div>
+
+<script>
+
+    window.addEventListener('load', function() {
+        var allElements = document.getElementsByTagName('*');
+        Array.prototype.forEach.call(allElements, function(el) {
+            var includePath = el.dataset.includePath;
+            if (includePath) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        el.outerHTML = this.responseText;
+                    }
+                };
+                xhttp.open('GET', includePath, true);
+                xhttp.send();
+            }
+        });
+    });
+
+</script>
+
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; 2023 <a href="https://needleworm.github.io" target="_blank" rel="noreferrer">
+                        반병현
+                    </a> All Rights Reserved.</span>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.booksr.co.kr/" target="_blank" rel="noreferrer">
+                        생능출판사
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/prompt/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/prompt/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/prompt/js/jquery.easing.min.js"></script>
+    <script src="/prompt/js/classie.js"></script>
+    <script src="/prompt/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/prompt/js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/prompt/js/agency.js"></script>
+
+
+    </body>
+</html>
