@@ -275,11 +275,9 @@ fieldset[disabled] .btn-xl.active {
 
 @media(max-width:768px) {
     .logo {
-        width:40vw;
-        padding-top:8px;
+        height: 90%
     }
 }
-
 
 @media(min-width:768px) {
     .logo {
@@ -319,7 +317,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('img/header-bg.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/needleworm/dataset/img/header-bg.png');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -708,7 +706,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('https://cdn.jsdelivr.net/gh/needleworm/frontend/img/map-image.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/needleworm/dataset/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }

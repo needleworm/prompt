@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
  "display": "fullscreen",
- "start_url": "/tech3/?fullscreen=true",
- "name": "비전공 개발자",
+ "start_url": "/dataset/?fullscreen=true",
+ "name": "Datasets",
  "theme_color": "#000000",
  "background_color": "#ffffff",
  "icons": [
