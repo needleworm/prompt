@@ -4,6 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.lectureCover{
+    width:50vw;
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+
 .chapterSubtitle{
     color: #00a84b;
     font-size: 19px;
